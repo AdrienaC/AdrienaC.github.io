@@ -31,20 +31,8 @@ button:focus {
 	outline: none;
 }
 
-.hidden {
-	position: absolute;
-	overflow: hidden;
-	width: 0;
-	height: 0;
-	pointer-events: none;
-}
-
 html, button, input, select, textarea {
   font-family: 'Roboto Mono', monospace;
-}
-
-h1 b, h2 b, h3 b, h4 b {
-  font-weight: 300;
 }
 
 body {
@@ -59,13 +47,13 @@ h1, h2, h3 {
   font-weight: 200;
 }
 
+h1 b, h2 b, h3 b {
+  font-weight: 300;
+}
+
 a {
   text-decoration: none;
   color: $primary-2;
-}
-
-address {
-  font-style: normal;
 }
 
 ::selection {
@@ -73,10 +61,26 @@ address {
   color: $primary-1;
 }
 
+.hidden {
+	position: absolute;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	pointer-events: none;
+}
+
 // TextScramble Styling
 
 .dud {
   color: $accent-1;
+}
+
+// Top Logo
+.toplogo img {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 // Navbar
@@ -134,12 +138,19 @@ address {
 #about img {
   flex: none;
   margin-right: 20px;
+  box-shadow: 5px 5px 32px -2px rgba(0,0,0,0.52);
 }
 
 @media screen and (max-width: 50em) {
   .texty {
     max-width: 100%;
   }
+}
+
+// Projects/Research
+
+.details i {
+  color: $accent-1
 }
 
 // Scroll to top
@@ -154,6 +165,10 @@ address {
 }
 
 // Footer
+address {
+  font-style: normal;
+}
+
 #footer {
   background-color: $accent-1;
   padding: 20px;
@@ -186,6 +201,11 @@ address {
       display: inline-block;
     }
   }
+}
+
+.footer__logo img {
+  margin: 0 auto;
+  display: block;
 }
 
 /* Box Grid Styling, courtesy of https://tympanus.net/codrops/?p=30373*/
@@ -238,6 +258,10 @@ address {
 	margin: 1.5em 2vw;
 	cursor: default;
 	transform-style: preserve-3d;
+}
+
+a.grid_item:hover {
+  background-color: inherit;
 }
 
 .grid__item:hover,

@@ -15,18 +15,8 @@
 button:focus {
   outline: none; }
 
-.hidden {
-  position: absolute;
-  overflow: hidden;
-  width: 0;
-  height: 0;
-  pointer-events: none; }
-
 html, button, input, select, textarea {
   font-family: 'Roboto Mono', monospace; }
-
-h1 b, h2 b, h3 b, h4 b {
-  font-weight: 300; }
 
 body {
   background-color: white;
@@ -38,19 +28,32 @@ body {
 h1, h2, h3 {
   font-weight: 200; }
 
+h1 b, h2 b, h3 b {
+  font-weight: 300; }
+
 a {
   text-decoration: none;
   color: black; }
-
-address {
-  font-style: normal; }
 
 ::selection {
   background-color: #FF846E;
   color: white; }
 
+.hidden {
+  position: absolute;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  pointer-events: none; }
+
 .dud {
   color: #6bc2d3; }
+
+.toplogo img {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%, -50%); }
 
 .navbar-dark {
   font-size: 20px; }
@@ -91,11 +94,15 @@ address {
 
 #about img {
   flex: none;
-  margin-right: 20px; }
+  margin-right: 20px;
+  box-shadow: 5px 5px 32px -2px rgba(0, 0, 0, 0.52); }
 
 @media screen and (max-width: 50em) {
   .texty {
     max-width: 100%; } }
+.details i {
+  color: #6bc2d3; }
+
 .scrolltotop {
   position: fixed;
   bottom: 20px;
@@ -103,6 +110,9 @@ address {
   font-size: 20px; }
   .scrolltotop i:hover {
     color: #FF846E; }
+
+address {
+  font-style: normal; }
 
 #footer {
   background-color: #6bc2d3;
@@ -128,6 +138,10 @@ address {
   padding: 0; }
   .footer__nav ul li {
     display: inline-block; }
+
+.footer__logo img {
+  margin: 0 auto;
+  display: block; }
 
 /* Box Grid Styling, courtesy of https://tympanus.net/codrops/?p=30373*/
 /* Content */
@@ -173,6 +187,9 @@ address {
   margin: 1.5em 2vw;
   cursor: default;
   transform-style: preserve-3d; }
+
+a.grid_item:hover {
+  background-color: inherit; }
 
 .grid__item:hover,
 .grid__item:focus {

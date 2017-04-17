@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <title>Personal Website</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<script>document.documentElement.className = 'js';</script>
+  <script>document.documentElement.className = 'js';</script>
+  <script src="https://use.fontawesome.com/a4373d6159.js"></script>
 
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css'>
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/gridopen.css">
-  <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" /> -->
   <script src="js/modernizr-custom.js"></script>
 
 </head>
@@ -22,15 +23,20 @@
   <a href="#main"><i class="fa fa-long-arrow-up" aria-hidden="true"></i></a>
 </div>
 
+<!-- Top Loo -->
+<div class="toplogo">
+  <img src="img/aclogomini.png" alt="Adriena Cribb's logo">
+</div>
+
 <section id="main">
   <h2>Hi, I'm <b>Adriena Cribb</b>:  <span class="descr-scramble"></span></h2>
   <nav class="navbar-dark">
     <ul>
       <li><a href="#">Home</a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="#">Projects/Research</a></li>
+      <li><a href="#projects">Projects/Research</a></li>
       <li><a href="#">Resume</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 </section>
@@ -39,18 +45,22 @@
   <div class="container">
     <h2><b>About</b></h2>
     <div class="floaty">
-      <img src="https://cdn.tutsplus.com/net/uploads/legacy/958_placeholders/placehold.gif" alt="A picture of Adriena" />
-      <div class="texty"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+      <img src="img/me270x270.png" alt="A picture of Adriena" />
+      <div class="texty">
+        <h4>Developer | Researcher | Human Being</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
     </div>
   </div>
 </section>
-
+<!--
+Category, Languages, Resources, link to code online, link to website
+-->
 <section id="projects" class="section">
   <div class="container">
     <h2><b>Projects/Research</b></h2>
     <div class="content">
       <div class="grid grid--effect-vega">
-        <div class="le__grid__box__item" data-size="674x433">
+        <div class="le__grid__box__item" data-size="1036x1080">
           <a href="img/askpittad.png" class="grid__item grid__item--cgold">
             <div class="stack">
               <div class="stack__deco"></div>
@@ -74,9 +84,22 @@
 								<!-- <span class="column__text">Positive</span> -->
 							</div>
 						</div>
+            <div class="description description--grid">
+							<h3>askPitt</h3>
+							<p>askPitt is a chatbot for University of Pittsburgh students, designed to make finding Pitt resources
+                fast, simple, and intuitive. Created for the Pitt Mobile App Challenge 2017 by Adriena Cribb and Daniel Zheng.
+                Accessible on Facebook and Slack, built with API.ai, and supported by a webhook written in Python and hosted by Heroku.</p>
+							<div class="details">
+								<ul>
+									<li><i class="fa fa-terminal" aria-hidden="true"></i><span> Python</span></li>
+									<li><i class="fa fa-hand-spock-o" aria-hidden="true"></i><span> Flask, API.ai, Heroku, Facebook, Slack, Google Maps API</span></li>
+									<li><i class="fa fa-code" aria-hidden="true"></i><span> Github link coming soon</span></li>
+								</ul>
+							</div>
+						</div>
           </a>
         </div>
-        <div class="le__grid__box__item" data-size="480x600">
+        <div class="le__grid__box__item" data-size="519x746">
           <a href="img/meclimbinrockwatercolor.png" class="grid__item grid__item--cgreen">
             <div class="stack">
               <div class="stack__deco"></div>
@@ -84,7 +107,7 @@
               <div class="stack__deco"></div>
               <div class="stack__deco"></div>
               <div class="stack__figure">
-                <img class="stack__img" src="img/meclimbinrockwatercolor.png" alt="Image"/>
+                <img class="stack__img" src="img/me375x375.png" alt="Image"/>
               </div>
             </div>
             <div class="grid__item-caption">
@@ -100,9 +123,22 @@
 								<!-- <span class="column__text">Positive</span> -->
 							</div>
 						</div>
+            <div class="description description--grid">
+							<h3>Personal Website</h3>
+							<p>This website is designed as a personal landing page for anyone trying to find me online.
+              [And the picture on the left is just me, courageously climbing a rock, and rendered in watercolor.]</p>
+							<div class="details">
+								<ul>
+									<li><i class="fa fa-terminal" aria-hidden="true"></i> <span>HTML, CSS, JS</span></li>
+									<li><i class="fa fa-hand-spock-o" aria-hidden="true"></i> <span>SCSS, Github (hosting)</span></li>
+									<li><i class="fa fa-code" aria-hidden="true"></i>
+                    <span>AdrienaC.github.io</span></li>
+								</ul>
+							</div>
+						</div>
           </a>
         </div>
-        <div class="le__grid__box__item" data-size="244x244">
+        <div class="le__grid__box__item" data-size="359x244">
           <a href="img/aome.png" class="grid__item grid__item--corange">
             <div class="stack">
               <div class="stack__deco"></div>
@@ -127,21 +163,21 @@
               </div>
             </div>
             <div class="description description--grid">
-							<h3>Mother's Love</h3>
-							<p>Every time you drink a glass of milk or eat a piece of cheese, you harm a mother. Please go vegan. <em>&mdash; Gary L. Francione</em></p>
+							<h3>A03 Update Tracker</h3>
+							<p>A webapp for tracking updates by creators on A03, a popular online fanwork archive.
+              The app accesses, filters, and curates users' update emails and presents relevant information in a simple interface.</p>
 							<div class="details">
 								<ul>
-									<li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-									<li><i class="icon icon-focal_length"></i><span>22.5mm</span></li>
-									<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-									<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-									<li><i class="icon icon-iso"></i><span>80</span></li>
+									<li><i class="fa fa-terminal" aria-hidden="true"></i> <span>HTML, CSS, JS, Python</span></li>
+									<li><i class="fa fa-hand-spock-o" aria-hidden="true"></i> <span>SCSS, Django, Google APIs</span></li>
+									<li><i class="fa fa-code" aria-hidden="true"></i>
+                    <span>Github link coming soon</span></li>
 								</ul>
 							</div>
 						</div>
           </a>
         </div>
-        <div class="le__grid__box__item" data-size="600x343">
+        <div class="le__grid__box__item" data-size="500x400">
           <a href="img/lungsketch.jpg" class="grid__item grid__item--ccreme">
 						<div class="stack">
 							<div class="stack__deco"></div>
@@ -153,7 +189,7 @@
 							</div>
 						</div>
             <div class="grid__item-caption">
-							<h3 class="grid__item-title">Lung Segmentation w/ CNNs and CRFs</h3>
+							<h3 class="grid__item-title">Lungs, CNNs and CRFs</h3>
 							<div class="column column--left">
 								<span class="column__text">Category</span>
 								<span class="column__text">Keywords</span>
@@ -166,21 +202,22 @@
 							</div>
 						</div>
             <div class="description description--grid">
-							<h3>The Corpse</h3>
-							<p>Recognize meat for what it really is: the antibiotic- and pesticide-laden corpse of a tortured animal. <em>&mdash; Ingrid Newkirk</em></p>
+							<h3>Lung Segmentation w/ CNNs and CRFs</h3>
+							<p>During Spring 2017, I used deep convolutional neural networks (a type of artificial neural network)
+              and conditional random fields to automatically segment pulmonary CT scans. Research was conducted
+              under Dr. Jiantao Pu at the University of Pittsburgh.</p>
 							<div class="details">
 								<ul>
-									<li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-									<li><i class="icon icon-focal_length"></i><span>22.5mm</span></li>
-									<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-									<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-									<li><i class="icon icon-iso"></i><span>80</span></li>
+									<li><i class="fa fa-terminal" aria-hidden="true"></i> <span>Python</span></li>
+									<li><i class="fa fa-hand-spock-o" aria-hidden="true"></i> <span>TensorFlow, misc. Python datascience packages</span></li>
+									<li><i class="fa fa-code" aria-hidden="true"></i>
+                    <span>Github link coming soon</span></li>
 								</ul>
 							</div>
 						</div>
 					</a>
         </div>
-        <div class="le__grid__box__item" data-size="700x700">
+        <div class="le__grid__box__item" data-size="375x300">
           <a href="img/1.png" class="grid__item grid__item--c1">
 						<div class="stack">
 							<div class="stack__deco"></div>
@@ -195,31 +232,31 @@
 							<h3 class="grid__item-title">Coming Soon</h3>
 							<div class="column column--left">
 								<span class="column__text">Category</span>
+                <span class="column__text">Keywords</span>
 								<!-- <span class="column__text">Subjects</span>
 								<span class="column__text">Result</span> -->
 							</div>
 							<div class="column column--right">
 								<span class="column__text">? ? ?</span>
-								<!-- <span class="column__text">133456</span>
-								<span class="column__text">Positive</span> -->
+								<span class="column__text">? ? ?</span>
+								<!-- <span class="column__text">Positive</span> -->
 							</div>
 						</div>
             <div class="description description--grid">
-							<h3>The Corpse</h3>
-							<p>Recognize meat for what it really is: the antibiotic- and pesticide-laden corpse of a tortured animal. <em>&mdash; Ingrid Newkirk</em></p>
+							<h3>Coming Soon</h3>
+							<p>Think left and think right and think low and think high. Oh, the thinks you can think up if only you try! <em>&mdash; Dr. Seuss</em></p>
 							<div class="details">
 								<ul>
-									<li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-									<li><i class="icon icon-focal_length"></i><span>22.5mm</span></li>
-									<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-									<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-									<li><i class="icon icon-iso"></i><span>80</span></li>
+									<li><i class="fa fa-terminal" aria-hidden="true"></i> <span>? ? ?</span></li>
+									<li><i class="fa fa-hand-spock-o" aria-hidden="true"></i> <span>? ? ?</span></li>
+									<li><i class="fa fa-code" aria-hidden="true"></i>
+                    <span>? ? ?</span></li>
 								</ul>
 							</div>
 						</div>
 					</a>
         </div>
-				<div class="le__grid__box__item" data-size="1129x1358">
+				<div class="le__grid__box__item" data-size="375x300">
           <a href="img/2.png" class="grid__item grid__item--c2">
 						<div class="stack">
 							<div class="stack__deco"></div>
@@ -234,28 +271,27 @@
 							<h3 class="grid__item-title">Coming Soon</h3>
 							<div class="column column--left">
 								<span class="column__text">Category</span>
-								<!-- <span class="column__text">Subjects</span>
-								<span class="column__text">Result</span> -->
+                <span class="column__text">Keywords</span>
+								<!-- <span class="column__text">Result</span> -->
 							</div>
 							<div class="column column--right">
 								<span class="column__text">? ? ?</span>
-								<!-- <span class="column__text">133456</span>
-								<span class="column__text">Positive</span> -->
+                <span class="column__text">? ? ?</span>
+								<!-- <span class="column__text">Positive</span> -->
 							</div>
 						</div>
             <div class="description description--grid">
-							<h3>Appetite or Suffering?</h3>
-							<p>Could you look an animal in the eyes and say to it, 'My appetite is more important than your suffering'? <em>&mdash; Moby</em></p>
-							<div class="details">
-								<ul>
-									<li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-									<li><i class="icon icon-focal_length"></i><span>22.5mm</span></li>
-									<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-									<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-									<li><i class="icon icon-iso"></i><span>80</span></li>
-								</ul>
-							</div>
-						</div>
+              <h3>Coming Soon</h3>
+              <p>If things start happening, don't worry, don't stew, just go right along and you'll start happening too. <em>&mdash; Dr. Seuss</em></p>
+              <div class="details">
+                <ul>
+                  <li><i class="fa fa-terminal" aria-hidden="true"></i> <span>? ? ?</span></li>
+                  <li><i class="fa fa-hand-spock-o" aria-hidden="true"></i> <span>? ? ?</span></li>
+                  <li><i class="fa fa-code" aria-hidden="true"></i>
+                    <span>? ? ?</span></li>
+                </ul>
+              </div>
+            </div>
 					</a>
 				</div>
 			</div>
@@ -300,6 +336,9 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
+    </div>
+    <div class="footer__logo">
+      <img src="img/aclogonano.png" alt="Adriena Cribb's logo">
     </div>
   </div>
 </footer>
